@@ -35,15 +35,7 @@ strength = st.select_slider(
 if st.button("Let's start with this"):
     st.success("🥂")
 
-if st.button("Let's start with this"):
-    # Call snow() from st_snow_fall, NOT st.snow()
-    snow(
-        emoji="🍸",
-        font_size=32,
-        falling_speed=3,
-        animation_duration=2
-    )
-    st.success("🍸 Cheers!")
+
 
 #cate = ["a", "b", "c", "d","e"]
 #cate_df = pd.DataFrame({
