@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("🍸 Mix & Shake")
 
-st.write("What is your fav flav profile for cocktails")
+st.write("Guess what is my fav flav profile for cocktails")
 
 import streamlit as st
 
@@ -13,13 +13,14 @@ profile = st.radio(
 if profile == "Fruity":
     st.success("🍓")
 elif profile == "Floral":
-    st.success("🌸")
+    st.error("🌸")
 elif profile == "Herbal":
-    st.success("🍀")
+    st.error("🍀")
 elif profile == "Spicy":
-    st.success("🌶")
+    st.error("🌶")
 elif profile == "Creamy":
-    st.success("🍦")
+    st.error("🍦")
+
 
 sweet = st.select_slider(
     "On a scale of 1 to 5, how sweet do you like your cocktail?",
@@ -33,6 +34,16 @@ strength = st.select_slider(
 
 if st.button("Let's start with this"):
     st.success("🥂")
+
+if st.button("Let's start with this"):
+    # Call snow() from st_snow_fall, NOT st.snow()
+    snow(
+        emoji="🍸",
+        font_size=32,
+        falling_speed=3,
+        animation_duration=2
+    )
+    st.success("🍸 Cheers!")
 
 #cate = ["a", "b", "c", "d","e"]
 #cate_df = pd.DataFrame({
